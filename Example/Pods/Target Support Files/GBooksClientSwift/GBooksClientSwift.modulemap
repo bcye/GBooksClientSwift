@@ -1,0 +1,6 @@
+framework module GBooksClientSwift {
+  umbrella header "GBooksClientSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

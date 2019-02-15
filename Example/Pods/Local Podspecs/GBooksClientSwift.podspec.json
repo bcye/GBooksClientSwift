@@ -1,0 +1,28 @@
+{
+  "name": "GBooksClientSwift",
+  "version": "0.1.0",
+  "summary": "A short description of GBooksClientSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/bcye/GBooksClientSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Bruce Röttgers (bcye)": "br.apps@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/bcye/GBooksClientSwift.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/bcye_tw",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "GBooksClientSwift/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+
+    ]
+  }
+}

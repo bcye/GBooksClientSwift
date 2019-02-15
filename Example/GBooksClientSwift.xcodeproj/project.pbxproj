@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		03D3EC306E019A793D8488AB /* Pods-GBooksClientSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBooksClientSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-GBooksClientSwift_Tests/Pods-GBooksClientSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		071AA26ACC69F50F405C7CA6 /* Pods-GBooksClientSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBooksClientSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-GBooksClientSwift_Example/Pods-GBooksClientSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2FC2CBE7DD9622E362D93CF5 /* GBooksClientSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GBooksClientSwift.podspec; path = ../GBooksClientSwift.podspec; sourceTree = "<group>"; };
-		3248979B627A4CC835EC559E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2FC2CBE7DD9622E362D93CF5 /* GBooksClientSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GBooksClientSwift.podspec; path = ../GBooksClientSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3248979B627A4CC835EC559E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		47A3D77AF9B5C66AD3D8A981 /* Pods_GBooksClientSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBooksClientSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* GBooksClientSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBooksClientSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6CCB11E6D861EA656EFBF56A /* Pods-GBooksClientSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBooksClientSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GBooksClientSwift_Tests/Pods-GBooksClientSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		82847FC5B5276DB8CB52CD5D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		82847FC5B5276DB8CB52CD5D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9192A8F840C06F5E942D9D4C /* Pods_GBooksClientSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBooksClientSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B955CA9AE1C170EA5CEA2D8A /* Pods-GBooksClientSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBooksClientSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-GBooksClientSwift_Example/Pods-GBooksClientSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +147,6 @@
 				6CCB11E6D861EA656EFBF56A /* Pods-GBooksClientSwift_Tests.debug.xcconfig */,
 				03D3EC306E019A793D8488AB /* Pods-GBooksClientSwift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,7 +189,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				82F3BAF77580C66915EAC824 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,41 +270,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GBooksClientSwift_Example/Pods-GBooksClientSwift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GBooksClientSwift/GBooksClientSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBooksClientSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBooksClientSwift_Example/Pods-GBooksClientSwift_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82F3BAF77580C66915EAC824 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GBooksClientSwift_Tests/Pods-GBooksClientSwift_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBooksClientSwift_Tests/Pods-GBooksClientSwift_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2C9F1E87DCF74A8A469D67D /* [CP] Check Pods Manifest.lock */ = {

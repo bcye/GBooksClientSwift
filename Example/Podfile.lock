@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.7.3)
+  - GBooksClientSwift (0.1.0):
+    - Alamofire
+
+DEPENDENCIES:
+  - GBooksClientSwift (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  GBooksClientSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  GBooksClientSwift: b8021eed1d326693cbfde1af1577d305f020b2a7
+
+PODFILE CHECKSUM: 7edec50430e34ca0c2d10a68f3afc66223f13054
+
+COCOAPODS: 1.6.0.beta.2

@@ -1,6 +1,6 @@
 # GBooksClientSwift
 
-[![CI Status](https://img.shields.io/travis/Bruce/GBooksClientSwift.svg?style=flat)](https://travis-ci.org/Bruce/GBooksClientSwift)
+[![CI Status](https://img.shields.io/travis/bcye/GBooksClientSwift.svg?style=flat)](https://travis-ci.org/bcye/GBooksClientSwift)
 [![Version](https://img.shields.io/cocoapods/v/GBooksClientSwift.svg?style=flat)](https://cocoapods.org/pods/GBooksClientSwift)
 [![License](https://img.shields.io/cocoapods/l/GBooksClientSwift.svg?style=flat)](https://cocoapods.org/pods/GBooksClientSwift)
 [![Platform](https://img.shields.io/cocoapods/p/GBooksClientSwift.svg?style=flat)](https://cocoapods.org/pods/GBooksClientSwift)
@@ -22,7 +22,7 @@ pod 'GBooksClientSwift'
 
 ## Author
 
-Bruce, t15thbruce@outlook.de
+bcye, br.apps@icloud.com
 
 ## License
 
