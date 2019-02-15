@@ -25,7 +25,6 @@
 		8F51BFC0EBE0CA3033E734A02BE0F523 /* GBooksClientSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C904FD6CA6AA39B26109A72CC41D296F /* GBooksClientSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94989AD277BAF35FE5ADBC4E50EB554E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9F66ED7A250BB1AE2875F8D38C7398 /* Foundation.framework */; };
 		965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E230A0448B394DE26E688DAC8E6201E /* Request.swift */; };
-		9BEA07C50A3C7EE0577AE0C438D65F6E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C620382FE67C350B1CD1367077AD5793 /* ReplaceMe.swift */; };
 		AEBC603C8E798F65FC1F096337304572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9F66ED7A250BB1AE2875F8D38C7398 /* Foundation.framework */; };
 		B424F524BBBE34E685129945993809A8 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */; };
 		B77705737566AE83ED7E448923D7FA60 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */; };
@@ -33,6 +32,7 @@
 		D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BC8802B90D6D34BB8A6C74415E2913 /* Alamofire-dummy.m */; };
 		DBE6E2E4D205545E7988CFA5057C31D6 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */; };
 		E81EE5FA7E4E83F09BAD1A2DF70ADEC4 /* Pods-GBooksClientSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2615C5C4F4506E5B88E6E53E57A5F79F /* Pods-GBooksClientSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDBF452C221685BC0004829A /* GBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF452B221685BC0004829A /* GBooksService.swift */; };
 		EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AE7E7ED606685A23324D56F03FB9C2 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0C34DF63D3D4E779278D9F7CE81EB42 /* Pods-GBooksClientSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6908FAA4498DBFD43F62057BE16AF91 /* Pods-GBooksClientSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F778039CDC684379739766E756670506 /* GBooksClientSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A8D5A3C6DA73DDEDAA250837A50849 /* GBooksClientSwift-dummy.m */; };
@@ -73,7 +73,7 @@
 
 /* Begin PBXFileReference section */
 		001B6918B6209D5C92C1D6003EA6176F /* Pods-GBooksClientSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GBooksClientSwift_Tests-Info.plist"; sourceTree = "<group>"; };
-		0303656CF1E80DE5B8ECCE205F216D33 /* GBooksClientSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GBooksClientSwift.framework; path = GBooksClientSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0303656CF1E80DE5B8ECCE205F216D33 /* GBooksClientSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBooksClientSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		0B89AFDDB8177FD989F00BD59AF9B056 /* Pods-GBooksClientSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GBooksClientSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
@@ -96,28 +96,27 @@
 		4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		4CE1AA4288102EA8CD5FB18C98CAAD1F /* Pods-GBooksClientSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GBooksClientSwift_Tests-dummy.m"; sourceTree = "<group>"; };
 		5AD5A070B5603BDA71A73D4F61F1F97B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		613C7343E732054EC1872BB43F8D0698 /* Pods_GBooksClientSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GBooksClientSwift_Tests.framework; path = "Pods-GBooksClientSwift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		613C7343E732054EC1872BB43F8D0698 /* Pods_GBooksClientSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBooksClientSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		6C257D025B95BBAC2D3BE474CE6C305F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6C257D025B95BBAC2D3BE474CE6C305F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		748E5BFE57ECAB6177CA69FBB028878E /* GBooksClientSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GBooksClientSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		748E5BFE57ECAB6177CA69FBB028878E /* GBooksClientSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GBooksClientSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		785FE7753F5B6F97934A249B315AB2CE /* Pods-GBooksClientSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBooksClientSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		A2B51DB4A7CAC17299D53E591E23AE9F /* Pods_GBooksClientSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GBooksClientSwift_Example.framework; path = "Pods-GBooksClientSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B51DB4A7CAC17299D53E591E23AE9F /* Pods_GBooksClientSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBooksClientSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6908FAA4498DBFD43F62057BE16AF91 /* Pods-GBooksClientSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GBooksClientSwift_Example-umbrella.h"; sourceTree = "<group>"; };
 		A6A8D5A3C6DA73DDEDAA250837A50849 /* GBooksClientSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GBooksClientSwift-dummy.m"; sourceTree = "<group>"; };
 		A8AE7E7ED606685A23324D56F03FB9C2 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B789D703008579EF794E2A2D137A27E8 /* GBooksClientSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GBooksClientSwift-Info.plist"; sourceTree = "<group>"; };
-		C620382FE67C350B1CD1367077AD5793 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = GBooksClientSwift/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		C904FD6CA6AA39B26109A72CC41D296F /* GBooksClientSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBooksClientSwift-umbrella.h"; sourceTree = "<group>"; };
 		C94187EFB234AA48759DEACC9294DCEB /* GBooksClientSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBooksClientSwift-prefix.pch"; sourceTree = "<group>"; };
 		C9CFBAFE051CE49775699B59387B2F44 /* Pods-GBooksClientSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBooksClientSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9F66ED7A250BB1AE2875F8D38C7398 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC45D07A251B6549933FE3355A90DAB6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC45D07A251B6549933FE3355A90DAB6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC78F5D84FB60D48F3E5222FBB748F70 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		DE63FF8427E39DACE8493CD8CAC82665 /* Pods-GBooksClientSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GBooksClientSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
@@ -126,7 +125,8 @@
 		E5752F8C583645FB122DF06D83880902 /* GBooksClientSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GBooksClientSwift.modulemap; sourceTree = "<group>"; };
 		E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		E99C1F2E7FB92576F36A30FCA6756380 /* Pods-GBooksClientSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBooksClientSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EB0799F5E6DE6971603487B46EE1DA9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EB0799F5E6DE6971603487B46EE1DA9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EDBF452B221685BC0004829A /* GBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBooksService.swift; sourceTree = "<group>"; };
 		F493D41065F831073FF5EE010E0F79DD /* Pods-GBooksClientSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GBooksClientSwift_Example-Info.plist"; sourceTree = "<group>"; };
 		FF22D62B98A4DEF2499E954E2BAA004C /* Pods-GBooksClientSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBooksClientSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,7 +200,6 @@
 				B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */,
 				D45B050E207D49F1F0B18F2B76512FB3 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -294,7 +293,8 @@
 		C5797335F3BA77694734C6B1E404EEE2 /* GBooksClientSwift */ = {
 			isa = PBXGroup;
 			children = (
-				C620382FE67C350B1CD1367077AD5793 /* ReplaceMe.swift */,
+				EDBF452A221685990004829A /* Models */,
+				EDBF4529221685840004829A /* Services */,
 				084A14E8AB3E093217FC9E51259F18B8 /* Pod */,
 				91CF3DBC1C63BD342AB3243B84E6A76F /* Support Files */,
 			);
@@ -339,6 +339,21 @@
 				C5797335F3BA77694734C6B1E404EEE2 /* GBooksClientSwift */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EDBF4529221685840004829A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EDBF452B221685BC0004829A /* GBooksService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EDBF452A221685990004829A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +478,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					37475488702716A35ED3D6113526BC47 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -536,8 +556,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBF452C221685BC0004829A /* GBooksService.swift in Sources */,
 				F778039CDC684379739766E756670506 /* GBooksClientSwift-dummy.m in Sources */,
-				9BEA07C50A3C7EE0577AE0C438D65F6E /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,8 +733,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -854,6 +873,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13929D84CAE343A9C1E326D10E520DCC /* GBooksClientSwift.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -875,6 +895,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -919,6 +940,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13929D84CAE343A9C1E326D10E520DCC /* GBooksClientSwift.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
